@@ -1,0 +1,19 @@
+.pagination {
+   margin-top: 40px;
+   text-align: center;
+   color: $color-blue;
+
+   &__button {
+      margin-bottom: 40px;
+   }
+
+   a:hover {
+      color: black;
+   }
+
+   &__list {
+      a:not(:last-child) {
+         margin-right: 30px;
+      }
+   }
+}

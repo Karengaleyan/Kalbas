@@ -1,0 +1,57 @@
+.sales {
+   &__row {
+      margin: 60px 0 -20px 0;
+
+      &>div {
+         padding-bottom: 20px;
+      }
+   }
+}
+
+.sale {
+   background: #F2F4F4;
+   border-radius: 12px;
+   padding: 15px 40px 40px 30px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   height: 100%;
+
+   &__content {
+      margin-top: 20px;
+      display: flex;
+      flex-grow: 1;
+      flex-direction: column;
+      justify-content: space-between;
+   }
+
+   &__text {
+      color: $color-gray;
+      margin: 10px 0 45px;
+      flex-grow: 1;
+   }
+
+   &__btn {
+      border: 1px solid #ADCBCD;
+      border-radius: 12px;
+      color: $color-blue !important;
+      height: 45px;
+      padding: 0 25px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: color .2s ease-in, border-color .2s ease-in;
+
+      &:hover {
+         color: #146c72 !important;
+         border: 1px solid #69bac0 !important;
+      }
+   }
+
+   img {
+      display: block;
+      margin: 0 auto;
+      height: 240px;
+      object-fit: contain;
+   }
+}

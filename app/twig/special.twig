@@ -1,0 +1,150 @@
+{% extends "templates/base.twig" %}
+
+{% block title %}
+	Special
+{% endblock %}
+
+{% block content %}
+
+	<section class="special">
+		<div class="container">
+			<div class="breadcrumbs">
+				<ul>
+					<li>
+						<a href="#">Главная</a>
+					</li>
+					<li>
+						<span>Специальные предложения</span>
+					</li>
+					<li>
+						<span>Эксклюзивные продукты</span>
+					</li>
+				</ul>
+			</div>
+			<h2 class="special__title title">
+				Эксклюзивные продукты
+			</h2>
+			<div class="special__subtitle">
+				Эксклюзивные мясные продукты с доставкой на дом
+			</div>
+			<div class="special__content">
+				<div class="special__content-img">
+					<img src="/images/special/img-big.jpg" alt="">
+				</div>
+				<div class="container-narrow">
+					<div class="text-normal">
+						«Сибирская продовольственная компания» — крупнейший мясозаготовитель Сибирского федерального
+																								                     округа, перерабатывающий более 1000 тонн мяса в месяц. Мы реализуем мясо собственного производства
+																								                     из экологически чистых регионов Горного Алтая и Новосибирской области.
+					</div>
+					<div class="text-thin">
+						<p>
+							Компания обновляет и дополняет продуктовую линейку новыми наименованиями.
+																												                        В 2021 году запустился масштабный современный завод по заготовке и переработке мясного сырья
+																												                        на территории НСО (город Черепаново).
+																												                        На новом заводе установлено оборудование европейского уровня, позволяющее выпускать конкурентную
+																												                        востребованную мясную продукцию.
+						</p>
+
+						<div class="special__content-text-thin-points">
+							<span>
+								На нашем сайте вы можете выбрать и заказать эксклюзивные мясные продукты с доставкой на дом.
+							</span>
+							<ul>
+								<li>Обратите внимание, что минимальный объем заказа для некоторых позиций — от 3-4 кг (см.
+																																				                              карточку
+																																				                              товара).
+								</li>
+								<li>Срок выполнения заказа 2-3 дня.
+								</li>
+								<li>Вся продукция — в вакуумной упаковке, может быть доставлена в охлажденном или
+																																				                              замороженном
+																																				                              виде
+																																				                              (добавьте ваши предпочтения в комментариях).
+								</li>
+							</ul>
+						</div>
+
+						<p>
+							Добавьте выбранные позиции в корзину, перейдите в корзину и оформите заказ.
+																												                        Наш менеджер свяжется с вами (удобным для вас способом) и уточнит детали заказа.
+						</p>
+					</div>
+
+					{% include "components/socials.twig" %}
+
+				</div>
+			</div>
+			<div class="products">
+				<div class="products__top">
+					<h2 class="products__title">
+						Товары из статьи
+					</h2>
+					<div>
+						<a href="#" class="btn btn--size-sm btn--theme-transparent">
+							Перейти в каталог
+						</a>
+					</div>
+				</div>
+				<div class="product__row row">
+					<div class="col-20 col-md-4 col-sm-6 product__col">
+						{% include "components/product.twig"  with {
+                     img : 'special-1.jpg',
+                     title : 'Говядина Мякоть',
+                     weight :'~1 кг',
+                     about : 'В наличии',
+                     price : '451 ₽/кг',
+                     btn : 'btn.svg',
+                  }%}
+					</div>
+
+					<div class="col-20 col-md-4 col-sm-6 product__col">
+							{% include "components/product.twig"  with {
+                     img : 'special-2.jpg',
+                     title : 'Говядина Тазобедренный отруб',
+                     weight :'~1 кг',
+                     about : 'В наличии',
+                     price : '599 ₽/кг',
+                     btn : 'btn.svg',
+                  }%}
+					</div>
+
+					<div class="col-20 col-md-4 col-sm-6 product__col">
+							{% include "components/product.twig"  with {
+                     img : 'special-3.jpg',
+                     title : 'Седло баранье',
+                     weight :'~0,9 кг',
+                     about : 'В наличии',
+                     price : '560 ₽/кг',
+                     btn : 'btn.svg',
+                  }%}
+					</div>
+
+					<div class="col-20 col-md-4 col-sm-6 product__col">
+							{% include "components/product.twig"  with {
+                     img : 'special-4.jpg',
+                     title : 'Бараний окорок в маринаде',
+                     weight :'~2 кг',
+                     about : 'Менее 10 шт.',
+                     price : '401 ₽/кг',
+                     btn : 'btn.svg',
+                  }%}
+					</div>
+
+					<div class="col-20 col-md-4 col-sm-6 product__col">
+						{% include "components/product.twig" with {
+                     img : 'special-5.jpg',
+                     opacity : '0.5',
+                     title : 'Баранья лопатка в пряных травах',
+                     weight :'~1,5 кг',
+                     about : 'Нет в наличии',
+                     price : '395 ₽/кг',
+                     btn : 'btn.svg',
+                  }%}
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+{% endblock %}

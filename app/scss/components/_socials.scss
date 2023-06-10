@@ -1,0 +1,18 @@
+.socials {
+   a {
+      transition: opacity 0.2s ease-in;
+   }
+
+   & a:hover {
+      opacity: .8;
+   }
+
+   span {
+      margin-right: 60px;
+      color: $color-gray;
+   }
+
+   a:not(:last-child) {
+      margin-right: 5px;
+   }
+}

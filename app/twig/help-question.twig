@@ -1,0 +1,89 @@
+{% extends "templates/base.twig" %}
+
+{% block title %}
+	Help-question
+{% endblock %}
+
+{% block content %}
+   <div class="help">
+      <div class="container">
+         <div class="breadcrumbs">
+            <ul>
+               <li>
+                  <a href="#">Главная</a>
+               </li>
+               <li>
+                  <span>Помощь покупателю</span>
+               </li>
+            </ul>
+         </div>
+         <h2 class="page__title title">
+            Помощь покупателю
+         </h2>
+         <div class="help__slider">
+            <span>Помощь покупателю</span>
+            <a class="help__slider-item">
+               Часто задаваемые вопросы
+            </a>
+         </div>
+         <div class="help__wrapper">
+                  {% include "components/help-aside.twig" %}
+            <div class="help__content">
+               <div class="help__title">
+                  Часто задаваемые вопросы
+               </div>
+               <div class="question question-opened">
+                  <div class="question__title">
+                     Когда ждать доставку заказа?
+                  </div>
+                  <div class="question__text">
+                     Мы готовы доставить ваш заказ в день его оформления или в другой удобный для вас день
+                     после
+                     оформления в интернет-магазине. Временной интервал зависит от времени оформления заказа.
+                  </div>
+               </div>
+               <div class="question">
+                  <div class="question__title">
+                     Когда ждать доставку заказа?
+                  </div>
+               </div>
+               <div class="question">
+                  <div class="question__title">
+                     Я не могу принять заказ в назначенное время
+                  </div>
+               </div>
+               <div class="question">
+                  <div class="question__title">
+                     Как хранятся товары и комплектуются заказы?
+                  </div>
+               </div>
+               <div class="question">
+                  <div class="question__title">
+                     Что будет, если заказанный товар отсутствует на складе?
+                  </div>
+               </div>
+               <div class="question">
+                  <div class="question__title">
+                     Что делать, если меня не устроило качество товара?
+                  </div>
+               </div>
+               <div class="question">
+                  <div class="question__title">
+                     Может ли измениться стоимость заказа?
+                  </div>
+               </div>
+               <div class="question">
+                  <div class="question__title">
+                     Как я могу оплатить заказ?
+                  </div>
+               </div>
+               <div class="question mb-0">
+                  <div class="question__title">
+                     Какова минимальная сумма заказа?
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+{% endblock %}

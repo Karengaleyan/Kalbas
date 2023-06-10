@@ -1,0 +1,29 @@
+.date {
+   &__content {
+      & .row {
+         margin: 60px 0 -50px 0;
+      }
+
+      & .row>div {
+         margin-bottom: 50px;
+      }
+   }
+
+   &__content-text {
+      color: $color-gray;
+      margin-top: 15px;
+   }
+
+   &__block {
+      background: #EFF3F6;
+      border-radius: 12px;
+      padding: 30px 0;
+      text-align: center;
+   
+      &-time {
+         display: block;
+         font-size: 20px;
+         margin-top: 15px;
+      }
+   }
+}

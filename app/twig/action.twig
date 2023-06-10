@@ -1,0 +1,99 @@
+{% extends "templates/base.twig" %}
+
+{% block title %}
+	Stocks
+{% endblock %}
+
+{% block content %}
+	<div class="container">
+		<div class="breadcrumbs">
+			<ul>
+				<li>
+					<a href="#">Главная</a>
+				</li>
+				<li>
+					<span>Акции</span>
+				</li>
+			</ul>
+		</div>
+
+		<h2 class="page__title title">
+			Акции СПК
+		</h2>
+
+		<div class="jumbotron">
+			<div class="jumbotron__row row">
+				<div class="col-6">
+					<div class="jumbotron__content">
+						<h1 class="jumbotron__title-big h1">
+							Большая распродажа колбас
+						</h1>
+						<div class="jumbotron__subtitle">
+							Скидки на все колбасные изделия до 45%
+						</div>
+						<div class="jumbotron__btn">
+							<a href="#" class="jumbotron__btn-left btn btn--size-lg btn--theme-bg-orange">
+								Подробнее
+							</a>
+							<a href="#" class="btn btn--size-lg btn--theme-bg-white">
+								Перейти к покупкам
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-4">
+					<div class="jumbotron__img">
+						<img src="images/stocks/slide-photo.png" alt="product">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="sales">
+			<div class="sales__row row">
+				<div class="col-lg-3 col-md-4 col-6">
+					{% include "components/sale.twig" with {title : 'Большая распродажа колбас',
+                text : 'Скидки на все колбасные изделия до 45%',
+                img : 'product-1.png'} %}
+				</div>
+				<div class="col-lg-3 col-md-4 col-6">
+					{% include "components/sale.twig" with {title : '-30% на подарочные наборы',
+                text : 'Заказывайте подарочные наборы для близких до 07.01.2022 и получайте скидку 30%',
+                 img : 'product-2.png'} %}
+				</div>
+				<div class="col-lg-3 col-md-4 col-6">
+					{% include "components/sale.twig" with {title : 'Пробуйте наши Новинки с выгодой!',
+                text : 'Представляем новую линейку сервелатов «Высокий вкус» с разными вкусами!',
+                 img : 'product-3.png'}%}
+				</div>
+				<div class="col-lg-3 col-md-4 col-6">
+					{% include "components/sale.twig" with {title : '-25% на товары из категории Акция ',
+                text : 'Проводите лето с деликатесами от компании СПК',
+                 img : 'product-4.png'}%}
+				</div>
+				<div class="col-lg-3 col-md-4 col-6">
+					{% include "components/sale.twig" with {title : 'Получайте скидки за покупки',
+                text : 'Покупайте товары в инетрнет-магазине СПК и получайте дополнительные скидки',
+                 img : 'product-5.png'}%}
+				</div>
+				<div class="col-lg-3 col-md-4 col-6">
+					{% include "components/sale.twig" with {title : 'Доставка от 1 000 ₽ бесплатно по промокоду',
+                text : 'Оформите заказ на сумму от 1 000 ₽ и примените промокод DOM1000',
+                 img : 'product-6.png'}%}
+				</div>
+				<div class="col-lg-3 col-md-4 col-6">
+					{% include "components/sale.twig" with {title : 'Скидки до 40% на товары из категории Хит',
+                text : 'Все наши хиты со скидкой 40% до 31.12.2021',
+                 img : 'product-7.png'}%}
+				</div>
+				<div class="col-lg-3 col-md-4 col-6">
+					{% include "components/sale.twig" with {title : 'Программа «Разнообразное питание»',
+                text : 'Питайтесь разнообразно — копите на самую большую скидку!',
+                 img : 'product-8.png'}%}
+				</div>
+			</div>
+		</div>
+
+		{% include "components/pagination.twig" %}
+	</div>
+{% endblock %}

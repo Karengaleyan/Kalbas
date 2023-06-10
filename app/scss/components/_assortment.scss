@@ -1,0 +1,54 @@
+.assortments {
+   margin-bottom: -20px;
+
+   &>div {
+      margin-bottom: 20px;
+   }
+}
+
+.assortment {
+   padding: 25px 30px 45px 30px;
+   border-radius: 12px;
+   height: 100%;
+
+   &-bg-burgundy {
+      background-color: #5D251F;
+   }
+
+   &-bg-blue {
+      background-color: $color-blue;
+   }
+
+   &-bg-orange {
+      background-color: $color-orange;
+   }
+
+   &-bg-yellow {
+      background-color: #D98F4E;
+   }
+
+   &__img {
+      text-align: center;
+
+      img {
+         height: 235px;
+      }
+   }
+
+   &__content {
+      margin-top: 20px;
+   }
+
+   &__content-title {
+      margin-bottom: 10px;
+      color: $color-white;
+
+      & a:hover {
+         color: $color-white;
+      }
+   }
+
+   &__content-text {
+      color: rgba(255, 255, 255, 0.6);
+   }
+}

@@ -1,0 +1,49 @@
+.price {
+   &__info {
+      &-title {
+         padding-left: 40px;
+         position: relative;
+
+         &::before {
+            content: '';
+            background-image: url(/images/help/price/location-blue.svg);
+            background-repeat: no-repeat;
+            width: 32px;
+            height: 32px;
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+         }
+      }
+
+      &-title-yellow {
+         margin-top: 65px;
+
+         &::before {
+            background-image: url(/images/help/price/location-yellow.svg);
+         }
+      }
+
+      &-text {
+         margin: 15px 0 40px 0;
+      }
+   }
+}
+
+.price__block {
+   background: #EFF3F6;
+   border-radius: 12px;
+   padding: 25px 10px 25px 30px;
+   height: 100%;
+
+   &-title {
+      font-weight: 600;
+      font-size: 40px;
+      color: $color-blue;
+   }
+
+   &-text {
+      color: $color-gray;
+      max-width: 440px;
+   }
+}

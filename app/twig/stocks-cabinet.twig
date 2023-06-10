@@ -1,0 +1,46 @@
+{% extends "templates/base.twig" %}
+
+{% block title %}
+	Stocks-cabinet
+{% endblock %}
+
+{% block content %}
+
+	<div class="container">
+
+		<div class="breadcrumbs">
+			<ul>
+				<li>
+					<a href="#">Главная</a>
+				</li>
+				<li>
+					<span>Акции</span>
+				</li>
+			</ul>
+		</div>
+
+		<div class="jumbotron jumbotron__cabinet">
+			<div class="jumbotron__row row jumbotron__row-stock">
+				<div class="col-sm-5">
+					<div class="jumbotron__text">
+						В настоящий момент нет действующих акций. Проверьте свой
+						<a href="#">личный кабинет</a>
+						– возможно,
+							 в нем есть индивидуальное акционное предложение для вас.
+					</div>
+					<div class="jumbotron__btn-stock">
+						<a href="#" class="btn btn--size-lg btn--theme-blue">
+							Перейти в кабинет
+						</a>
+					</div>
+				</div>
+				<div class="col-4">
+					<div class="jumbotron__img">
+						<img src="/images/stocks/stocks-cabinet.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+{% endblock %}

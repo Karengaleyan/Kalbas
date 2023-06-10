@@ -1,0 +1,30 @@
+.help__aside {
+   max-width: 340px;
+   height: 390px;
+   flex: 0 0 340px;
+   padding: 30px;
+   border: 1px solid #DFDDDA;
+   border-radius: 12px;
+
+   ul,
+   li {
+      list-style-type: none;
+   }
+
+   li:not(:last-child) {
+      margin-bottom: 20px;
+   }
+
+   &-item {
+      position: relative;
+
+      &:hover:before {
+         content: '';
+         position: absolute;
+         height: 40px;
+         left: -30px;
+         top: -6px;
+         border-left: 4px solid $color-blue;
+      }
+   }
+}

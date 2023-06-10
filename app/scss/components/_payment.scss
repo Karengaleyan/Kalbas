@@ -1,0 +1,11 @@
+.payment {
+   .help__info {
+      margin-top: 50px;
+      &-text{
+         margin: 0;
+      }
+      &-text::before {
+         top: 0;
+      }
+   }
+}

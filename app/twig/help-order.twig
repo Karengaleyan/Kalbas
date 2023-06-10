@@ -1,0 +1,124 @@
+{% extends "templates/base.twig" %}
+
+{% block title %}
+Help-order
+{% endblock %}
+
+{% block content %}
+
+
+<div class="help">
+   <div class="container">
+      <div class="breadcrumbs">
+         <ul>
+            <li>
+               <a href="#">Главная</a>
+            </li>
+            <li>
+               <span>Помощь покупателю</span>
+            </li>
+         </ul>
+      </div>
+      <h2 class="page__title help__title-mobile title">
+         Помощь покупателю
+      </h2>
+      <div class="help__slider">
+         <span>Помощь покупателю</span>
+         <a class="help__slider-item">
+            Как сделать заказ
+         </a>
+      </div>
+      <div class="help__wrapper">
+         {% include "components/help-aside.twig" %}
+         <div class="help__content">
+            <div class="help__title">
+               Как сделать заказ
+            </div>
+            <div class="order">
+               <div class="row">
+                  <div class="col-md-4 col-sm-6 col-12">
+                     <div class="order__block">
+                        <div class="order__block-img">
+                           <a href="#">
+                              <img src="/images/help/order/help-order-icon-1.svg" alt="">
+                           </a>
+                        </div>
+                        <div class="order__block-text">
+                           Выбирайте любимые продукты, не забывайте про новинки
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-4 col-sm-6 col-12">
+                     <div class="order__block">
+                        <div class="order__block-img">
+                           <a href="#">
+                              <img src="/images/help/order/help-order-icon-2.svg" alt="">
+                           </a>
+                        </div>
+                        <div class="order__block-text">
+                           Нажмите «Перейти к оформлению»
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-4 col-sm-6 col-12">
+                     <div class="order__block">
+                        <div class="order__block-img">
+                           <a href="#">
+                              <img src="/images/help/order/help-order-icon-3.svg" alt="">
+                           </a>
+                        </div>
+                        <div class="order__block-text">
+                           Заполните форму оформления заказа или зайдите в личный кабинет
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-4 col-sm-6 col-12">
+                     <div class="order__block">
+                        <div class="order__block-img">
+                           <a href="#">
+                              <img src="/images/help/order/help-order-icon-4.svg" alt="">
+                           </a>
+                        </div>
+                        <div class="order__block-text">
+                           Отслеживайте статус заказа в личном кабинете на сайте или в мобильной версии
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-4 col-sm-6 col-12">
+                     <div class="order__block">
+                        <div class="order__block-img">
+                           <a href="#">
+                              <img src="/images/help/order/help-order-icon-5.svg" alt="">
+                           </a>
+                        </div>
+                        <div class="order__block-text">
+                           Встречайте курьера!
+                           В указанную дату и время
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               {% include "components/help-info.twig" with {
+               text:'В ассортименте интернет-магазина ООО «Сибирская продовольственная компания»
+               представлена как продукция, имеющая точный вес, так и весовая продукция.',
+               textBold : 'Обратите внимание! ',
+               textBottom :'При добавлении в корзину весовой продукции количество в корзине указано в штуках, а цена
+               за 1 кг.
+               Фактическая стоимость вашего заказа будет известна после сборки заказа и может отличаться от той, которая
+               будет указана в корзине,
+               как в большую, так и в меньшую сторону.
+               Наш менеджер обязательно свяжется с вами (удобным для вас способом) и уточнит детали заказа.',
+               } %}
+               <div class="order__info-bottom">
+                  По вопросам работы интернет-магазина обращайтесь по телефону
+                  <a href="#">8 800 100 85 15</a>,
+                  набрав 1 в
+                  тональном режиме (звонок на территории РФ бесплатный).
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+
+{% endblock %}

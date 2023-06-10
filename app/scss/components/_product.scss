@@ -1,0 +1,164 @@
+.products {
+   &__top {
+      display: flex;
+      justify-content: space-between;
+   }
+
+   &__title {
+      font-size: 30px;
+      margin-bottom: 30px;
+   }
+
+   &__row {
+      border-radius: 12px;
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0;
+
+      &>div {
+         padding: 0;
+      }
+   }
+}
+
+.product {
+   padding: 20px;
+   display: flex;
+   flex-direction: column;
+   flex-grow: 1;
+   justify-content: space-between;
+   margin-bottom: -2px;
+   height: 100%;
+
+   &__col {
+      border: 1px solid #DFDDDA;
+      margin-right: -1px;
+      margin-bottom: -1px;
+
+      &:last-child {
+         border-radius: 0 15px 15px 0;
+      }
+
+      &:first-child {
+         border-radius: 15px 0 0 15px;
+      }
+   }
+
+   &__badge {
+      font-weight: 600;
+      font-size: 13px;
+      color: white;
+      background-color: $color-orange;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      height: 25px;
+      width: 50px;
+      justify-content: center;
+      position: absolute;
+   }
+
+   &__top {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      flex-grow: 1;
+      position: relative;
+   }
+
+   &__image {
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+
+   &__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      &-items {
+         text-align: center;
+      }
+
+      &-item:first-child {
+         background-color: black;
+      }
+
+      &-item:nth-child(2) {
+         background-color: #DFDDDA;
+      }
+
+      &-bottom {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         position: relative;
+      }
+   }
+
+   &__name {
+      margin-top: 10px;
+      font-size: 15px;
+      text-align: left;
+   }
+
+   &__breadcrumbs {
+      font-size: 15px;
+      color: $color-gray;
+      margin: 10px 0;
+
+      &-color-orange {
+         color: #BD732C;
+      }
+
+      &-color-black {
+         color: black;
+      }
+
+      span {
+         display: block;
+         font-size: 15px;
+      }
+
+      span:nth-child(2) {
+         font-size: 13px;
+      }
+
+      &-color {
+         color: #BD732C;
+      }
+   }
+
+   &__price {
+
+      &-line {
+         text-decoration: line-through;
+         font-size: 13px;
+         position: absolute;
+         content: '';
+         top: -15px;
+      }
+
+      &-orange {
+         color: #BF573F;
+      }
+   }
+
+   &__btn {
+      transition: opacity .2s ease-in;
+
+      &:hover {
+         opacity: .8;
+      }
+   }
+
+   &-opacity {
+      opacity: .5;
+
+      .product__btn {
+         opacity: 1;
+      }
+   }
+}

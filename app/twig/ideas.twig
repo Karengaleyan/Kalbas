@@ -1,0 +1,137 @@
+{% extends "templates/base.twig" %}
+
+{% block title %}
+	Ideas
+{% endblock %}
+
+{% block content %}
+
+	<section class="ideas">
+		<div class="container">
+
+			<div class="breadcrumbs">
+				<ul>
+					<li>
+						<a href="#">Главная</a>
+					</li>
+					<li>
+						<span>Вдохновляющие идеи</span>
+					</li>
+				</ul>
+			</div>
+
+			<h2 class="page__title title">
+				Вдохновляющие идеи
+			</h2>
+
+			<div class="assortments row">
+				<div class="col-xl-3 col-md-4 col-6">
+					{% include "components/assortment.twig" with { 
+                  img: 'assortment-1.png',
+                  title: 'Вкус праздника',
+                  color: '#5D251F',
+                  text: 'Интересные идеи праздничных блюд на Новый год',
+               } %}
+				</div>
+				<div class="col-xl-3 col-md-4 col-6">
+					{% include "components/assortment.twig" with { 
+                  img: 'assortment-2.png',
+                  title: 'Подарки на любой случай',
+                  color :'#2DA0A5',
+                  text: 'Порадуйте своих близких',
+               } %}
+				</div>
+				<div class="col-xl-3 col-md-4 col-6">
+					{% include "components/assortment.twig" with { 
+                  img: 'assortment-3.png',
+                  title: 'Праздники и вечеринки',
+                  color :'#BF573F',
+                  text: '10 идей как оформить закуски',
+               } %}
+				</div>
+				<div class="col-xl-3 col-md-4 col-6">
+					{% include "components/assortment.twig" with { 
+                  img: 'assortment-4.png',
+                  title: 'Мясные деликатесы',
+                   color :'#D98F4E',
+                  text: 'Деликатесы для вашего праздника',
+               } %}
+				</div>
+				<div class="col-xl-3 col-md-4 col-6">
+					{% include "components/assortment.twig" with { 
+                  img: 'assortment-5.png',
+                  title: 'Легко и просто',
+                   color :'#D98F4E',
+                  text: 'Легкие фуршетные закуски',
+               } %}
+				</div>
+				<div class="col-xl-3 col-md-4 col-6">
+					{% include "components/assortment.twig" with { 
+                  img: 'assortment-6.png',
+                  title: 'Месье Оливье',
+                   color :'#BF573F',
+                  text: '5 рецептов главного новогоднего салата',
+               } %}
+				</div>
+				<div class="col-xl-3 col-md-4 col-6">
+					{% include "components/assortment.twig" with { 
+                  img: 'assortment-7.png',
+                  title: 'Романтический ужин',
+                   color :'#5D251F',
+                  text: '5 отличных идей для романтического вечера',
+               } %}
+				</div>
+				<div class="col-xl-3 col-md-4 col-6">
+					{% include "components/assortment.twig" with { 
+                  img: 'assortment-8.png',
+                  title: 'Готовим мясо',
+                   color :'#2DA0A5',
+                  text: 'Несколько рецептов блюд из мяса, приготовить которые сможет каждый. ',
+               } %}
+				</div>
+				<div class="col-xl-3 col-md-4 col-6">
+					{% include "components/assortment.twig" with { 
+                  img: 'assortment-9.png',
+                  title: 'Праздники и вечеринки',
+                   color :'#2DA0A5',
+                  text: '10 идей как оформить закуски.',
+               } %}
+				</div>
+				<div class="col-xl-3 col-md-4 col-6">
+					{% include "components/assortment.twig" with { 
+                  img: 'assortment-10.png',
+                  title: 'Вкус праздника',
+                   color :'#5D251F',
+                  text: 'Интересные идеи праздничных блюд на Новый год ',
+               } %}
+				</div>
+				<div class="col-xl-3 col-md-4 col-6">
+					{% include "components/assortment.twig" with { 
+                  img: 'assortment-11.png',
+                  title: 'Мясные деликатесы',
+                   color :'#BF573F',
+                  text: 'Деликатесы для вашего праздника',
+               } %}
+				</div>
+				<div class="col-xl-3 col-md-4 col-6">
+					{% include "components/assortment.twig" with { 
+                  img: 'assortment-12.png',
+                  title: 'Подарки на любой случай',
+                   color :'#D98F4E',
+                  text: 'Порадуйте своих близких',
+               } %}
+				</div>
+			</div>
+
+			{% include "components/pagination.twig"  with { 
+            pages : '<a href="#">3</a>
+                  <a href="#">4</a>
+                  <a href="#">5</a>
+                  <a href="#">. . .</a>'
+
+         }%}
+
+		</div>
+	</section>
+
+{% endblock %}

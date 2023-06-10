@@ -1,0 +1,10 @@
+.container {
+   max-width: 1460px;
+   padding: 0 20px;
+   margin: 0 auto;
+
+   &-narrow {
+      max-width: 1180px;
+      margin: 0 auto;
+   }
+}

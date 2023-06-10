@@ -1,0 +1,120 @@
+{% extends "templates/base.twig" %}
+
+{% block title %}
+Help-date
+{% endblock %}
+
+{% block content %}
+
+<div class="help">
+   <div class="container">
+      <div class="breadcrumbs">
+         <ul>
+            <li>
+               <a href="#">Главная</a>
+            </li>
+            <li>
+               <span>Помощь покупателю</span>
+            </li>
+         </ul>
+      </div>
+      <h2 class="page__title help__title-mobile title">
+         Помощь покупателю
+      </h2>
+      <div class="help__slider">
+         <span>Помощь покупателю</span>
+         <a class="help__slider-item">
+            Дата и время заказа
+         </a>
+      </div>
+      <div class="help__wrapper">
+         {% include "components/help-aside.twig" %}
+         <div class="help__content">
+            <div class="help__title">
+               Дата и время заказа
+            </div>
+            <div class="help__subtitle help__subtitle-pb">
+               Вы можете выбрать доставку в следующих временных интервалах
+            </div>
+            <div class="date">
+               <div class="row">
+                  <div class="col-4">
+                     <div class="date__block">
+                        <div class="date__block-img">
+                           <img src="/images/help/date/clock-1.png" alt="">
+                        </div>
+                        <span class="date__block-time">
+                           10:00 – 14:00
+                        </span>
+                     </div>
+                  </div>
+                  <div class="col-4">
+                     <div class="date__block">
+                        <div class="date__block-img">
+                           <img src="/images/help/date/clock-2.png" alt="">
+                        </div>
+                        <span class="date__block-time">
+                           14:00 – 18:00
+                        </span>
+                     </div>
+                  </div>
+                  <div class="col-4">
+                     <div class="date__block">
+                        <div class="date__block-img">
+                           <img src="/images/help/date/clock-3.png" alt="">
+                        </div>
+                        <span class="date__block-time">
+                           18:00 – 22:00
+                        </span>
+                     </div>
+                  </div>
+               </div>
+               <div class="date__content">
+                  <div class="row">
+                     <div class="col-sm-6">
+                        <div class="date__content-time h3">
+                           Заказ до 11:00
+                        </div>
+                        <div class="date__content-text">
+                           При оформлении заказа до 11:00 доставка осуществляется с 14:00 до 22:00 в этот же день или
+                           на следующий день в удобный для вас временной интервал.
+                        </div>
+                     </div>
+                     <div class="col-sm-6">
+                        <div class="date__content-time h3">
+                           Заказ до 15:00
+                        </div>
+                        <div class="date__content-text">
+                           При оформлении заказа до 15:00 доставка осуществляется с 18:00 до 22:00 в этот же день
+                           или
+                           на следующий день в удобный для вас временной интервал.
+                        </div>
+                     </div>
+                     <div class="col-sm-6">
+                        <div class="date__content-time h3">
+                           Заказ до 18:00
+                        </div>
+                        <div class="date__content-text">
+                           При оформлении заказа до 18:00 доставка осуществляется на следующий день в удобный для
+                           вас
+                           временной интервал.
+                        </div>
+                     </div>
+                     <div class="col-sm-6">
+                        <div class="date__content-time h3">
+                           Заказ после 18:00
+                        </div>
+                        <div class="date__content-text">
+                           При оформлении заказа после 18:00 доставка осуществляется на следующий день с 14:00
+                           до 22:00 или в любой удобный для вас день.
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,44 @@
+.question {
+   background: #EFF3F6;
+   border-radius: 12px;
+   padding: 25px 45px 25px 25px;
+   position: relative;
+   margin-bottom: 10px;
+
+   &::before {
+      content: '';
+      position: absolute;
+      background-image: url(../../images/help/question/vector-down.svg);
+      height: 32px;
+      width: 32px;
+      display: block;
+      cursor: pointer;
+      right: 30px;
+      bottom: 7px;
+   }
+
+   &__title {
+      font-size: 20px;
+   }
+
+   &__text {
+      color: $color-gray;
+      margin-top: 15px;
+   }
+
+   &-opened {
+      position: relative;
+
+      &::before {
+         content: '';
+         position: absolute;
+         background-image: url(../../images/help/question/vector-up.svg);
+         height: 32px;
+         width: 32px;
+         display: block;
+         right: 30px;
+         top: 18px;
+         cursor: pointer;
+      }
+   }
+}

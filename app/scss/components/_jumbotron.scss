@@ -1,0 +1,41 @@
+.jumbotron {
+   background-color: $color-orange;
+   border-radius: 12px;
+   padding: 30px 0;
+
+   &__cabinet {
+      background-color: #F2F4F4;
+   }
+
+   &__row {
+      display: flex;
+      align-items: center;
+      min-height: 500px;
+      justify-content: space-evenly;
+
+   }
+
+   &__title-big {
+      max-width: 430px;
+   }
+
+   &__subtitle {
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 26px;
+      margin: 20px 0 45px 0;
+   }
+
+   &__btn-left {
+      margin-right: 20px;
+   }
+
+   &__text {
+      font-size: 26px;
+      color: rgba(18, 18, 18, 0.6);
+      margin-bottom: 40px;
+
+      a {
+         color: $color-blue;
+      }
+   }
+}

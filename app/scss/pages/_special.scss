@@ -1,0 +1,17 @@
+.special {
+   &__subtitle {
+      margin: 10px 0 30px 0;
+   }
+
+   &__content-text-thin-points {
+      margin: 30px 0;
+
+      ul {
+         margin-left: 25px;
+      }
+   }
+
+   .products {
+      margin-top: 120px;
+   }
+}

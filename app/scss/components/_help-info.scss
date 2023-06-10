@@ -1,0 +1,23 @@
+.help__info {
+   background: #EFF3F6;
+   border-radius: 12px;
+   color: $color-blue;
+   padding: 25px 40px 25px 70px;
+   position: relative;
+
+   p {
+      &:not(:last-child){
+         margin-bottom: 20px;
+      }
+   }
+
+   &::before {
+      position: absolute;
+      content: '';
+      background-image: url(/images/help/order-info-icon.svg);
+      width: 26px;
+      height: 24px;
+      top: 25px;
+      left: 25px;
+   }
+}

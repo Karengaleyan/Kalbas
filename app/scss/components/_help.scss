@@ -1,0 +1,33 @@
+.help {
+
+   &__slider {
+      border: 2px solid #E7E7E7;
+      border-radius: 8px;
+      width: 100%;
+      padding: 5px 20px 10px 20px;
+      display: none;
+
+      span {
+         color: $color-gray;
+         font-size: 14px;
+      }
+
+      &-item {
+         font-size: 16px;
+         position: relative;
+         display: block;
+         cursor: pointer;
+
+         &:after {
+            content: '';
+            position: absolute;
+            background-image: url(/images/help/help-slider-vector.svg);
+            background-repeat: no-repeat;
+            width: 13px;
+            height: 10px;
+            right: 0;
+            cursor: pointer;
+         }
+      }
+   }
+}

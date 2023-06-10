@@ -1,0 +1,146 @@
+{% extends "templates/base.twig" %}
+
+{% block title %}
+	Exclusive
+{% endblock %}
+
+{% block content %}
+
+	<div class="container">
+		<div class="breadcrumbs">
+			<ul>
+				<li>
+					<a href="#">Главная</a>
+				</li>
+				<li>
+					<span>Каталог товаров</span>
+				</li>
+				<li>
+					<span>Эксклюзивные продукты</span>
+				</li>
+			</ul>
+		</div>
+		<a class="badge-mobile">
+			<span>Каталог товаров</span>
+		</a>
+		<h2 class="page__title title">
+			Эксклюзивные продукты
+		</h2>
+
+		<div class="wrapper">
+
+			{% include "components/catalog.twig" %}
+
+			<div class="content content-pl">
+				<div class="row">
+					<div class="col-xl-4 col-lg-6 col-md-4 col-6">
+						{% include "components/exclusive.twig" with {
+                     img: 'product-1.png',
+                     title: 'Говядина бескостная',
+                     bg: '#8C3E37',
+                  } %}
+					</div>
+
+					<div class="col-xl-4 col-lg-6 col-md-4 col-6">
+						{% include "components/exclusive.twig" with {
+                        img : 'product-2.png',
+                        bg : '#9B3329',
+                        title: 'Говядина на кости',
+                     } %}
+					</div>
+
+					<div class="col-xl-4 col-lg-6 col-md-4 col-6">
+						{% include "components/exclusive.twig" with {
+                        img : 'product-3.png',
+                        bg : '#722D27',
+                        title: 'Полуфабрикаты
+                           из говядины',
+                     } %}
+					</div>
+
+					<div class="col-xl-4 col-lg-6 col-md-4 col-6">
+						{% include "components/exclusive.twig" with {
+                        img : 'product-4.png',
+                        bg : '#5A392F',
+                        title: 'Субпродукты говяжьи',
+                     } %}
+					</div>
+
+					<div class="col-xl-4 col-lg-6 col-md-4 col-6">
+						{% include "components/exclusive.twig" with {
+                        img : 'product-5.png',
+                        bg : '#AC4641',
+                        title: 'Фарши',
+                     } %}
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="products">
+			<div class="products__top">
+				<h2 class="products__title products__title-exclusive">
+					Популярные товары
+				</h2>
+			</div>
+			<div class="products__row row">
+				<div class="col-20 col-md-4 col-sm-6 product__col">
+					{% include "components/product.twig"  with {
+                     img : 'special-1.jpg',
+                     title : 'Говядина Мякоть',
+                     weight :'~1 кг',
+                     about : 'В наличии',
+                     price : '451 ₽/кг',
+                     btn : 'btn.svg',
+                  }%}
+				</div>
+
+				<div class="col-20 col-md-4 col-sm-6 product__col">
+					{% include "components/product.twig"  with {
+                     img : 'special-2.jpg',
+                     title : 'Говядина Тазобедренный отруб',
+                     weight :'~1 кг',
+                     about : 'В наличии',
+                     price : '599 ₽/кг',
+                     btn : 'btn.svg',
+                  }%}
+				</div>
+
+				<div class="col-20 col-md-4 col-sm-6 product__col">
+					{% include "components/product.twig"  with {
+                     img : 'special-3.jpg',
+                     title : 'Седло баранье',
+                     weight :'~0,9 кг',
+                     about : 'В наличии',
+                     price : '560 ₽/кг',
+                     btn : 'btn.svg',
+                  }%}
+				</div>
+
+				<div class="col-20 col-md-4 col-sm-6 product__col">
+					{% include "components/product.twig"  with {
+                     img : 'special-4.jpg',
+                     title : 'Бараний окорок в маринаде',
+                     weight :'~2 кг',
+                     about : 'Менее 10 шт.',
+                     price : '401 ₽/кг',
+                     btn : 'btn.svg',
+                  }%}
+				</div>
+
+				<div class="col-20 col-md-4 col-sm-6 product__col">
+					{% include "components/product.twig" with {
+                     img : 'special-5.jpg',
+                     opacity : '0.5',
+                     title : 'Баранья лопатка в пряных травах',
+                     weight :'~1,5 кг',
+                     about : 'Нет в наличии',
+                     price : '395 ₽/кг',
+                     btn : 'btn.svg',
+                  }%}
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+{% endblock %}

@@ -1,0 +1,24 @@
+.about {
+   &__title {
+      margin-bottom: 40px;
+   }
+
+   &__content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      &-text {
+         font-size: 26px;
+         font-weight: 300;
+
+         & p:nth-child(2) {
+            margin-top: 50px;
+         }
+
+         a {
+            color: $color-blue;
+         }
+      }
+   }
+}

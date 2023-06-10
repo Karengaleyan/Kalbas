@@ -1,0 +1,31 @@
+.order {
+   .row {
+      margin-bottom: -45px;
+   }
+
+   &__block {
+      margin-bottom: 45px;
+
+      &-text {
+         margin-top: 20px;
+         font-size: 20px;
+         max-width: 300px;
+      }
+
+      span {
+         color: #2DA0A6;
+         margin-left: 30px;
+      }
+   }
+
+   &__info-bottom {
+
+      a {
+         color: $color-blue;
+      }
+   }
+
+   .help__info {
+      margin: 100px 0 60px 0;
+   }
+}

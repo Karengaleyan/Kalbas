@@ -1,0 +1,25 @@
+.stocks {
+   &__title {
+      margin-bottom: 30px;
+   }
+
+   &__cabinet {
+      padding: 30px 0;
+      background-color: #F2F4F4;
+      border-radius: 12px;
+      margin-bottom: 125px;
+
+      &-row {
+         display: flex;
+         justify-content: space-evenly;
+         align-items: center;
+      }
+
+      
+
+      &-btn {
+         height: 60px;
+         padding: 0 30px;
+      }
+   }
+}

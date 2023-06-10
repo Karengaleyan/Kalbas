@@ -1,0 +1,136 @@
+{% extends "templates/base.twig" %}
+
+{% block title %}
+	Help-delivery
+{% endblock %}
+
+{% block content %}
+
+	<div class="help">
+		<div class="container">
+			<div class="breadcrumbs">
+				<ul>
+					<li>
+						<a href="#">Главная</a>
+					</li>
+					<li>
+						<span>Помощь покупателю</span>
+					</li>
+				</ul>
+			</div>
+			<h2 class="page__title help__title-mobile title">
+				Помощь покупателю
+			</h2>
+			<div class="help__slider">
+				<span>Помощь покупателю</span>
+				<a class="help__slider-item">
+					Доставка
+				</a>
+			</div>
+			<div class="help__wrapper">
+				{% include "components/help-aside.twig" %}
+				<div class="help__content">
+					<div class="help__title">
+						Доставка
+					</div>
+					<div class="help__subtitle help__subtitle-pb">
+						Доставка продуктов из интернет-магазина на дом, в офис, на дачу или в любое другое удобное для вас
+						место в Новосибирске.
+					</div>
+					<div class="help__content-row row">
+						<div class="col-xl-4 col-md-6">
+							<div class="help__block">
+								<div>
+									<div class="help__block-img">
+										<a href="#">
+											<img src="/images/help/delivery/help-delivery-icon-1.svg" alt="">
+										</a>
+									</div>
+									<div class="help__block-title h3">
+										<a href="#">
+											Бесплатная доставка
+										</a>
+									</div>
+								</div>
+								<div class="help__block-content">
+									<div class="help__block-text">
+										Для заказов на сумму от 1 500 рублей (после применения скидок и промокодов) для
+								      основной
+								      зоны доставки. Для заказов на сумму от 2 500 рублей (после применения скидок
+								      и промокодов)
+								      для отдаленной зоны доставки.
+									</div>
+									<div>
+										<a href="#" class="btn btn--size-xs btn--theme-transparent">
+											Зоны и стоимость доставки
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-4 col-md-6">
+							<div class="help__block">
+								<div>
+									<div class="help__block-img">
+										<a href="#">
+											<img src="/images/help/delivery/help-delivery-icon-2.svg" alt="">
+										</a>
+									</div>
+									<div class="help__block-title h3">
+										<a href="#">
+											Заказы на сайте или в мобильной версии
+										</a>
+									</div>
+								</div>
+								<div class="help__block-content">
+									<div class="help__block-text">
+										Интернет-магазин spkmarket.ru принимает заказы там, где удобно вам. Выбор способа
+									   заказа
+									   никак не повлияет на скорость доставки, цену товара или наличие ассортимента. Возможна
+									   оплата онлайн, наличными или картой курьеру.
+									</div>
+									<div>
+										<a href="#" class="btn btn--size-xs btn--theme-transparent">
+											Оформить заказ
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-4 col-md-6">
+							<div class="help__block help__block-delivery">
+								<div>
+									<div class="help__block-img">
+										<a href="#">
+											<img src="/images/help/delivery/help-delivery-icon-3.svg" alt="">
+										</a>
+									</div>
+									<div class="help__block-title h3">
+										<a href="#">
+											Всё свежее
+										</a>
+									</div>
+								</div>
+								<div class="help__block-content">
+									<div class="help__block-text">
+										Наши сборщики всегда проверяют сроки годности товаров: в доставку попадают самые
+										свежие
+									   продукты из тех, что есть на складе. А если чего-то не оказалось, сборщик перезвонит
+									   и предложит замену.
+									</div>
+									<div>
+										<a href="#" class="btn btn--size-xs btn--theme-transparent">
+											Выбрать продукты
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+{% endblock %}

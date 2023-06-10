@@ -1,0 +1,130 @@
+{% extends "templates/base.twig" %}
+
+{% block title %}
+	Help-price
+{% endblock %}
+
+{% block content %}
+
+      <div class="help">
+         <div class="container">
+            <div class="breadcrumbs">
+               <ul>
+                  <li>
+                     <a href="#">Главная</a>
+                  </li>
+                  <li>
+                     <span>Помощь покупателю</span>
+                  </li>
+               </ul>
+            </div>
+            <h2 class="page__title help__title-mobile title">
+               Помощь покупателю
+            </h2>
+            <div class="help__slider">
+               <span>Помощь покупателю</span>
+               <a class="help__slider-item">
+                  Как сделать заказ
+               </a>
+            </div>
+            <div class="help__wrapper">
+               {% include "components/help-aside.twig" %}
+               <div class="help__content">
+                  <div class="help__title">
+                     Зоны и стоимость доставки
+                  </div>
+                  <div class="price">
+                     <div class="price__info-title h3">
+                        Основная зона доставки
+                     </div>
+                     <div class="price__info-text">
+                        Заельцовский (включая Карьер Мочище и д. п. Мочище), Калининский (включая м-н Пашино),
+                        Центральный,
+                        Железнодорожный, Дзержинский, Октябрьский, Первомайский, Ленинский, Кировский районы.
+                     </div>
+                     <div class="row">
+                        <div class="col-sm-6">
+                           <div class="price__block">
+                              <div class="price__block-title">
+                                 <a href="#">
+                                    от 1 500 ₽
+                                 </a>
+                              </div>
+                              <div class="price__block-text">
+                                 БЕСПЛАТНО для заказов на сумму от 1 500 ₽.
+                                 Учитывается сумма после применения всех скидок и промокодов.
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-sm-6">
+                           <div class="price__block">
+                              <div class="price__block-title">
+                                 <a href="#">
+                                     <1 500 ₽ </a>
+                              </div>
+                              <div class="price__block-text">
+                                 240 ₽ для заказов менее 1 500 ₽. Учитывается сумма после применения всех скидок
+                                 и промокодов.
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="price__info-title price__info-title-yellow h3">
+                        Основная зона доставки
+                     </div>
+                     <div class="price__info-text">
+                        Советский район (в том числе Академгородок, ОбьГЭС, Нижняя Ельцовка), п. Мичуринский, п.
+                        Кольцово,
+                        п. Тулинский, с. Верх-Тула, п. Краснообск, п. Элитный, ст. Мочище, п. Кудряшовский, г. Обь, с.
+                        Барышево,
+                        с. Толмачево, мкр. Близкий, с. Каменка.
+                     </div>
+                     <div class="row">
+                        <div class="col-sm-6">
+                           <div class="price__block">
+                              <div class="price__block-title">
+                                 <a href="#">
+                                    от 2 500 ₽
+                                 </a>
+                              </div>
+                              <div class="price__block-text">
+                                 БЕСПЛАТНО для заказов на сумму от 2 500 ₽.
+                                 Учитывается сумма после применения всех скидок и промокодов.
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-sm-6">
+                           <div class="price__block">
+                              <div class="price__block-title">
+                                 <a href="#">
+                                    <2 500 ₽ </a>
+                              </div>
+                              <div class="price__block-text">
+                                 360 ₽ для заказов менее 2 500 ₽. Учитывается сумма после применения всех скидок
+                                 и промокодов.
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d293145.1382338146!2d82.6692286206021!3d54.9696550161573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x42dfe5e190cc4d97%3A0x9b3a0673e1d3e985!2z0J3QvtCy0L7RgdC40LHQuNGA0YHQuiwg0J3QvtCy0L7RgdC40LHQuNGA0YHQutCw0Y8g0L7QsdC7Liwg0KDQvtGB0YHQuNGP!5e0!3m2!1sru!2s!4v1676308463049!5m2!1sru!2s"
+                        width="1000" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                     </iframe>
+
+
+                     {% include "components/help-info.twig"  with {
+                     text : 'Курьер доставляет заказ до дверей квартиры/дома/офиса. За 30-60 минут курьер предупреждает вас
+                      о прибытии. Курьер может ожидать покупателя в точке приема заказа не более 15 минут.',
+                    textBottom :'Не забудьте проверить состав заказа и качество товаров при получении в течение 15 минут в присутствии курьера.',
+                     } %}
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+{% endblock %}
+
+	

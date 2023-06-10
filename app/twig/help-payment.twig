@@ -1,0 +1,121 @@
+{% extends "templates/base.twig" %}
+
+{% block title %}
+Help-payment
+{% endblock %}
+
+{% block content %}
+
+<div class="help">
+   <div class="container">
+      <div class="breadcrumbs">
+         <ul>
+            <li>
+               <a href="#">Главная</a>
+            </li>
+            <li>
+               <span>Помощь покупателю</span>
+            </li>
+         </ul>
+      </div>
+      <h2 class="page__title help__title-mobile title">
+         Помощь покупателю
+      </h2>
+      <div class="help__slider">
+         <span>Помощь покупателю</span>
+         <a class="help__slider-item">
+            Оплата заказа
+         </a>
+      </div>
+      <div class="help__wrapper">
+         {% include "components/help-aside.twig" %}
+         <div class="help__content payment">
+            <div class="help__title">
+               Оплата заказа
+            </div>
+            <div class="help__subtitle help__subtitle-pb">
+               Оплата заказа производится при получении заказа (наличный расчет или банковской картой по
+               терминалу) или онлайн в личном кабинете интернет-магазина. При доставке заказа курьер передает
+               покупателю следующий комплект документов.
+            </div>
+            <div class="row payment">
+               <div class="col-md-4">
+                  <div class="payment__block">
+                     <div class="payment__block-img">
+                        <a href="#">
+                           <img src="/images/help/payment/payment-1.png" alt="">
+                        </a>
+                     </div>
+                     <div>
+                        <div class="help__block-title h3">
+                           <a href="#">
+                              При оплате наличными
+                           </a>
+                        </div>
+                        <div class="help__block-text">
+                           <ul>
+                              <li>кассовый чек
+                              </li>
+                              <li>накладная</li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="payment__block">
+                     <div class="payment__block-img">
+                        <a href="#">
+                           <img src="/images/help/payment/payment-2.png" alt="">
+                        </a>
+                     </div>
+                     <div>
+                        <div class="help__block-title h3">
+                           <a href="#">
+                              При оплате банковской картой
+                           </a>
+                        </div>
+                        <div class="help__block-text">
+                           <ul>
+                              <li>кассовый чек
+                              </li>
+                              <li>слип-чек с терминала</li>
+                              <li>накладнаяа</li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="payment__block">
+                     <div class="payment__block-img">
+                        <a href="#">
+                           <img src="/images/help/payment/payment-3.png" alt="">
+                        </a>
+                     </div>
+                     <div>
+                        <div class="help__block-title h3">
+                           <a href="#">
+                              При оплате онлайн
+                           </a>
+                        </div>
+                        <div class="help__block-text">
+                           <ul>
+                              <li>электронный кассовый чек</li>
+                              <li>накладнаяа</li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            {% include "components/help-info.twig" with {
+            text : 'Не уничтожайте чек и накладную до проверки качества товара..',
+            } %}
+         </div>
+      </div>
+   </div>
+</div>
+
+
+{% endblock %}
