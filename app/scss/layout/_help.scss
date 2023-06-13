@@ -1,4 +1,33 @@
 .help {
+   &__title {
+      font-size: 30px;
+      margin-bottom: 30px;
+   }
+
+   &__heading {
+      margin: 30px 0;
+   }
+
+   &__subtitle {
+      max-width: 980px;
+
+      &-pb {
+         margin-bottom: 40px;
+      }
+   }
+
+   &__wrapper {
+      display: flex;
+   }
+
+   &__content {
+      margin-left: 60px;
+      width: 100%;
+   }
+
+   &__text-indent {
+      margin-bottom: 20px;
+   }
 
    &__slider {
       border: 2px solid #E7E7E7;

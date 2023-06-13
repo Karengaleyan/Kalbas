@@ -12,6 +12,7 @@
 @import 'layout/main';
 @import 'layout/container';
 @import 'layout/page';
+@import 'layout/help';
 
 @import 'components/assortment';
 @import 'components/brand';
@@ -26,7 +27,6 @@
 @import 'components/catalog';
 @import 'components/exclusive-product';
 @import 'components/help-aside';
-@import 'components/help';
 @import 'components/help-block';
 @import 'components/order';
 @import 'components/price';
@@ -43,6 +43,5 @@
 @import 'pages/gifts';
 @import 'pages/special';
 @import 'pages/exclusive';
-@import 'pages/help';
 
 @import 'media/media';
