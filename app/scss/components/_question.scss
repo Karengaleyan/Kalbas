@@ -9,6 +9,10 @@
       font-size: 20px;
       display: flex;
       justify-content: space-between;
+
+      span {
+         padding-right: 20px;
+      }
    }
 
    &__text {
@@ -19,6 +23,8 @@
 
    svg {
       transition: .3s;
+      max-width: 32px;
+      flex: 0 0 32px;
    }
 
    &.active {
